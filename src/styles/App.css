@@ -1,0 +1,29 @@
+@import "./_base/_base.css";
+@import "./_components/_footer.css";
+@import "./_components/_ContactPage.css";
+@import "./_components/_MenuSection.css";
+@import "./_components/_GalleryPage.css";
+@import "./_components/_AboutPage.css";
+@import "./_components/_HomePage.css";
+@import "./_components/_DialBeforeDig.css";
+@import "./_components/_ServicesSection.css";
+@import "./_components/_NotFoundPage.css";
+
+@import "../../node_modules/react-image-gallery/styles/css/image-gallery.css";
+
+* {
+	font-family: "Roboto Slab", serif;
+}
+
+html,
+body {
+	height: 100%;
+	min-height: 100%;
+	overflow-x: hidden;
+	margin: 0;
+	padding: 5fr;
+}
+.wrapper {
+	height: 100%;
+	min-height: 100%;
+}

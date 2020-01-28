@@ -1,0 +1,99 @@
+.home-page {
+	display: grid;
+	grid-template-columns: [first] 10% [line2] 80% [line3] 10% [end];
+	height: 100%;
+}
+.home-section {
+	display: flex;
+	grid-column-start: line2;
+	flex-direction: column;
+}
+.home-main-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.home-main-section > img {
+	max-height: 40rem;
+	border-radius: 2rem;
+	margin: 0 2rem 0 2rem;
+}
+.home-main-section a {
+	display: flex;
+	justify-content: center;
+	text-decoration: none;
+}
+.home-main-section button {
+	cursor: pointer;
+	padding: 2em 2em;
+	border: 0.2em solid #106939;
+	margin: 0 0.3em 3em 0;
+	border-radius: 2rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.5em;
+	color: #ffffff;
+	background-color: #106939;
+	text-align: center;
+	transition: all 0.2s;
+}
+.home-main-section-button:hover {
+	color: #106939;
+	background-color: #ffffff;
+	text-decoration: none;
+}
+
+.home-top-row {
+	margin: 3rem 2rem 3rem 2rem;
+	text-align: center;
+	background-color: bisque;
+	border-radius: 2rem 2rem 2rem 2rem;
+	color: #106939;
+	height: 9rem;
+}
+
+.home-bottom-row {
+	margin-bottom: 4rem;
+	text-align: center;
+}
+.home-mid-row {
+	margin: 0 0 4rem 0;
+	display: grid;
+	grid-template-columns: [first] 30% [line2] 40% [line3] 30% [end];
+}
+.home-mid-row p {
+	margin: 4rem 0 0 0;
+	grid-column-start: first;
+	grid-column-end: end;
+	text-align: center;
+}
+/* Set up mobile config */
+@media (max-width: 70rem) {
+	/* add option for small screens */
+	.home-page {
+		display: flex;
+		justify-content: center;
+	}
+	.home-section {
+		width: 20rem;
+	}
+	.home-top-row {
+		margin: 0 0 1rem 0;
+		height: 7rem;
+	}
+	.home-mid-row {
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+	.home-mid-row p {
+		margin-top: 0rem;
+	}
+	.home-main-section > img {
+		height: 10rem;
+		margin: 0;
+	}
+	.home-main-section button {
+		margin: 0 0 0 0;
+	}
+}

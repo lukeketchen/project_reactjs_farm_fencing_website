@@ -1,0 +1,63 @@
+.services-section {
+	margin-bottom: 3rem;
+}
+.services-section h1,
+h2 {
+	text-align: center;
+	margin: 3rem 0 2rem 0;
+}
+.Servises-gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.Servises-gallery img {
+	height: 15rem;
+	width: 25%;
+	border-radius: 2rem;
+}
+.Servises-gallery h3 {
+	width: 15rem;
+	text-align: center;
+	align-self: center;
+}
+.service-item {
+	width: 17rem;
+	margin: 1rem;
+}
+.Servises-mid-row {
+	margin: 0 0 4rem 0;
+	display: grid;
+	grid-template-columns: [first] 30% [line2] 40% [line3] 30% [end];
+}
+.Servises-mid-row p {
+	margin: 4rem 0 0 0;
+	grid-column-start: first;
+	grid-column-end: end;
+	text-align: center;
+}
+.Servises-mid-row ul {
+	margin: 4rem 0 0 0;
+	grid-column-start: line2;
+}
+.Servises-mid-row li {
+	margin: 2rem 0 2rem 0;
+}
+
+/* Set up mobile config */
+@media (max-width: 70rem) {
+	/* add option for small screens */
+	.services-section {
+		margin-bottom: 0;
+	}
+	.Servises-gallery {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.Servises-gallery img {
+		height: 5rem;
+		width: 5rem;
+		border-radius: 1rem;
+	}
+}

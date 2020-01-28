@@ -1,0 +1,45 @@
+/* css for whole site */
+.whole-page {
+	display: grid;
+	grid-template-columns: [start] 20% [line2] 80%;
+}
+.header-side {
+	height: 100%;
+	grid-column-start: start;
+	position: fixed;
+}
+.content-side {
+	grid-column-start: line2;
+	display: grid;
+	grid-template-rows: auto 30%;
+}
+.hambugar-image-css {
+	display: none;
+}
+/* Set up mobile config */
+@media (max-width: 70rem) {
+	/* add option for small screens */
+	.whole-page {
+		display: flex;
+		flex-direction: row;
+	}
+	.header-side {
+		display: none;
+		height: 100%;
+	}
+	.header-side-visible {
+		display: block;
+	}
+	.hambugar-image-css {
+		padding: 1rem;
+		display: block;
+	}
+	.hambugar-image-css:hover {
+		cursor: pointer;
+		border-style: dotted;
+		border-color: black;
+	}
+	h1 {
+		font-size: 1.5rem;
+	}
+}

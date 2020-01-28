@@ -1,0 +1,23 @@
+.footerSection {
+	display: flex;
+	justify-content: space-evenly;
+	background-color: bisque;
+	color: #106939;
+	padding: 2rem 0 2rem 0;
+	height: 15rem;
+	text-align: center;
+	border-radius: 2rem 2rem 0 0;
+}
+.footerSection a {
+	text-decoration: none;
+	color: #106939;
+	font-weight: bold;
+}
+/* Set up mobile config */
+@media (max-width: 70rem) {
+	/* add option for small screens */
+	.footerSection {
+		flex-wrap: wrap;
+		height: 25rem;
+	}
+}

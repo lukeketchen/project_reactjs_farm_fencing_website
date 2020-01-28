@@ -1,0 +1,122 @@
+.contact-page {
+	display: grid;
+	grid-template-columns: [first] 10% [line2] 80% [line3] 10% [end];
+}
+.contact-heading {
+	grid-column-start: line2;
+	grid-column-end: line3;
+	margin: 3rem 2rem 3rem 2rem;
+	background-color: bisque;
+	border-radius: 2rem;
+	color: #106939;
+	padding: 1rem;
+	height: 7rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.contact-page-details-container {
+	grid-column-start: line2;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.contact-page-details-selection {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+.contact-page-details-selection div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: bisque;
+	color: #106939;
+	margin-left: 6rem;
+	margin-right: 6rem;
+	border-radius: 2rem;
+}
+.contact-page-details-selection a {
+	text-decoration: none;
+	color: #106939;
+	font-style: italic;
+	font-weight: bold;
+}
+.contact-page-mid-heading {
+	grid-column-start: line2;
+	display: flex;
+	justify-content: center;
+	margin-top: 6rem;
+}
+.contactSection {
+	grid-column-start: line2;
+	height: 100%;
+	margin-bottom: 6rem;
+}
+.contactSection h1 {
+	width: 100%;
+	text-align: center;
+	font-size: 2rem;
+}
+.contactSection iframe {
+	width: 100%;
+	height: 28rem;
+}
+.contact-section-error {
+	color: red;
+	font-size: 1.5rem;
+}
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.contact-form input,
+textarea,
+button {
+	width: 100%;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	padding: 1rem;
+}
+.contact-form input,
+textarea {
+	border-color: #e8e8e8;
+	border-style: solid;
+	border-width: thin;
+}
+.contact-form button {
+	background-color: #106939;
+	color: bisque;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 2rem;
+	border: none;
+	cursor: pointer;
+}
+::placeholder {
+	color: #696464;
+}
+/* Set up mobile config */
+@media (max-width: 70rem) {
+	/* add option for small screens */
+	.contact-page {
+		justify-content: center;
+		grid-template-columns: [line2] 20rem [line3];
+	}
+	.contact-heading {
+		margin: 0;
+		padding: 0;
+		width: 20rem;
+		max-width: 100%;
+	}
+	.contact-page-details-selection {
+		display: flex;
+		flex-direction: column;
+	}
+	.contact-page-details-selection div {
+		margin: 0;
+		margin-top: 1rem;
+	}
+}

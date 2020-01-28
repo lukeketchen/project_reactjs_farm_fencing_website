@@ -1,0 +1,16 @@
+.dial-before-dig-main {
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
+/* Set up mobile config */
+@media (max-width: 70rem) {
+	/* add option for small screens */
+	.dial-before-dig-main {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	.dial-before-dig-main img {
+		height: 12rem;
+		max-width: 100%;
+	}
+}

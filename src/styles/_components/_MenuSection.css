@@ -1,0 +1,65 @@
+.menu-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	background-color: bisque;
+	height: 100%;
+}
+.menu-section a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1rem;
+	color: #106939;
+	border-bottom: 0.3rem solid #106939;
+	width: 80%;
+	text-align: center;
+}
+.menu-section img {
+	width: 100%;
+}
+.menu-img {
+	padding: 0.5rem;
+}
+.menu-items {
+	padding: 2rem 0 2rem 0;
+}
+.menu-contact {
+	display: flex;
+	flex-direction: column;
+	margin-top: 10rem;
+	text-align: center;
+	font-weight: bold;
+	color: #106939;
+	padding: 2rem 1rem 2rem 1rem;
+}
+.menu-contact a {
+	border: 0;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	text-transform: lowercase;
+	width: 100%;
+}
+.is-active {
+	border: 0.3rem solid #106939;
+}
+
+/* Set up mobile config */
+@media (max-width: 70rem) {
+	/* add option for small screens */
+	.menu-section {
+		width: 20rem;
+		height: 100%;
+	}
+	.menu-section img {
+		height: 15rem;
+	}
+	.menu-items {
+		padding: 1rem;
+	}
+	.menu-contact {
+		margin-top: 0;
+		padding: 0;
+	}
+}

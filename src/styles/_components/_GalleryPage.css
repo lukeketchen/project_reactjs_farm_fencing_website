@@ -1,0 +1,32 @@
+.gallery-page {
+	display: grid;
+	grid-template-columns: [first] 10% [line2] 80% [line3] 10% [end];
+}
+.gallery-page-heading {
+	grid-column-start: line2;
+	grid-column-end: line3;
+	margin: 3rem 2rem 3rem 2rem;
+	background-color: bisque;
+	border-radius: 2rem 2rem 2rem 2rem;
+	color: #106939;
+	padding: 1rem;
+	height: 7rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.gallery-images-container {
+	grid-column-start: line2;
+	justify-content: center;
+}
+.gallery-images {
+	max-width: 100%;
+	margin: 0.5rem 2rem 3rem 2rem;
+}
+/* Set up mobile config */
+@media (max-width: 70rem) {
+	/* add option for small screens */
+	.gallery-page-heading {
+		text-align: center;
+	}
+}
