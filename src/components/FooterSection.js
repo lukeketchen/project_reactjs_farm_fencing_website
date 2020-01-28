@@ -5,9 +5,9 @@ const FooterSection = () => (
 		<div>
 			<h1>CONTACT US</h1>
 			<p>Phone:</p>
-			<a href="tel:0419 156 159">0419 156 159</a>
+			<a href="tel:0419 156 159">0419 156 158</a>
 			<p>Email:</p>
-			<a href="mailto:admin@ruralfencingcontractors.com">
+			<a href="mailto:admin@ruralfencing.com">
 				admin@ruralfencingcontractors.com.au
 			</a>
 		</div>
